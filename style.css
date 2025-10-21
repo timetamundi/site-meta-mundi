@@ -82,14 +82,14 @@ body {
 
 /* Alinhar conteúdo do slide mais à esquerda */
 .slide-content {
-  max-width: 760px;         /* limite opcional para não ficar “solto” */
+  max-width: 760px; /* limite opcional para não ficar “solto” */
   margin-left: 0;
-  margin-right: auto;       /* puxa para a esquerda caso esteja centralizado */
-  padding-left: 24px;       /* ajuste fino do afastamento da borda esquerda */
+  margin-right: auto; /* puxa para a esquerda caso esteja centralizado */
+  padding-left: 24px; /* ajuste fino do afastamento da borda esquerda */
   text-align: left;
-  display: flex;            /* garante controle do alinhamento interno */
+  display: flex; /* garante controle do alinhamento interno */
   flex-direction: column;
-  align-items: flex-start;  /* conteúdo interno à esquerda */
+  align-items: flex-start; /* conteúdo interno à esquerda */
   align-self: center;
   justify-self: center;
 }
@@ -134,7 +134,7 @@ body {
 }
 
 /* responsive */
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .slide-content {
     max-width: 100%;
     padding-left: 16px;
@@ -154,5 +154,85 @@ body {
   }
   .brand img {
     height: 36px;
+  }
+}
+
+/* CARACTERÍSTICAS */
+
+.characteristics {
+  padding: 3rem 1rem;
+  background: #395193;
+}
+.characteristics .grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.characteristics h3 {
+  margin: 0 0 0.5rem;
+  font-size: 1.125rem;
+}
+.characteristics ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.characteristics li {
+  margin-bottom: 16px;
+}
+/* Segunda coluna: lista em duas colunas e visual mais amplo */
+.characteristics .col-2 ul {
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.5rem 1rem;
+}
+.grid .single-column {
+  border-radius: 25px;
+  background: #586fb0;
+  color: white;
+  padding: 16px;
+}
+.single-column .title {
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  border-radius: 40px;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+.grid .double-column {
+  border-radius: 25px;
+  background: white;
+  color: #586fb0;
+  padding: 16px;
+}
+.grid .double-column li:last-child {
+  grid-column: 1 / -1;
+  text-align: center;
+}
+.double-column .title {
+  padding: 1rem;
+  border: 2px solid rgba(255, 255, 255, 0.4);
+  background: #76e08a;
+  border-radius: 40px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  text-align: center;
+  font-size: 48px;
+  display: table;
+}
+@media (max-width: 700px) {
+  .characteristics .grid {
+    grid-template-columns: 1fr;
+  }
+  .characteristics .col-2 ul {
+    grid-template-columns: 1fr;
+  }
+  .characteristics ul {
+    padding-left: 1rem;
   }
 }
