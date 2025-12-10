@@ -163,13 +163,73 @@ body {
   padding: 3rem 1rem;
   background: #395193;
 }
-.characteristics .grid {
+.characteristics .grid, .cards-grid {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   gap: 1.5rem;
   align-items: start;
   max-width: 1200px;
   margin: 0 auto;
+}
+.cards-section {
+  padding-top: 64px;
+  padding-bottom: 64px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: #EBF0FB;
+}
+.cards-grid {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+.cards-grid .card {
+  background-image: linear-gradient(to right, #D5D5D5, #FFFFFF);
+  border-radius: 25px;
+  text-align: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.cards-grid .card-title {
+  background-color: #3f5aa3;
+  padding: 8px 16px;
+  display: block;
+  text-align: center;
+  border-radius: 25px;
+  color: white;
+  font-weight: 600;
+  max-width: 200px;
+  margin: 16px auto;
+}
+.cards-grid .card-thumbnail {
+  width: 100%;
+  max-width: 100%;
+  height: 180px;
+  max-height: 180px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.cards-grid .card-description {
+  font-size: small;
+  padding: 0 24px;
+}
+.thumb-1 {
+  background: url('img/FotosSolucoes1.jpg');
+}
+.thumb-2 {
+  background: url('img/FotosSolucoes2.jpg');
+}
+.thumb-3 {
+  background: url('img/FotosSolucoes3.jpg');
+}
+.thumb-4 {
+  background: url('img/FotosSolucoes4.jpg');
+}
+.thumb-5 {
+  background: url('img/FotosSolucoes5.jpg');
+}
+.thumb-6 {
+  background: url('img/FotosSolucoes6.jpg');
 }
 .characteristics h3 {
   margin: 0 0 0.5rem;
@@ -234,7 +294,7 @@ body {
   display: table;
 }
 @media (max-width: 700px) {
-  .characteristics .grid {
+  .characteristics .grid, .cards-grid {
     grid-template-columns: 1fr;
   }
   .characteristics .col-2 ul {
