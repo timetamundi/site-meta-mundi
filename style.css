@@ -183,6 +183,9 @@ body {
 .characteristics li {
   margin-bottom: 16px;
 }
+.characteristics i {
+  margin-right: 8px;
+}
 /* Segunda coluna: lista em duas colunas e visual mais amplo */
 .characteristics .col-2 ul {
   margin: 0;
@@ -213,6 +216,11 @@ body {
 .grid .double-column li:last-child {
   grid-column: 1 / -1;
   text-align: center;
+}
+.double-column .brand-logo {
+  display: block;
+  max-width: 200px;
+  margin: 0 auto 16px;
 }
 .double-column .title {
   padding: 1rem;
