@@ -293,6 +293,41 @@ body {
   font-size: 48px;
   display: table;
 }
+.contact-section {
+  background-color: #EBF0FB;
+  padding: 0 1rem;
+}
+.contact-data {
+  display: flex;
+  flex-direction: column;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.contact-data h2 {
+  color: #3F5AA3;
+}
+.contact-phones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.contact-phones p {
+  margin-right: 16px;
+  font-weight: bold;
+}
+.contact-phones i {
+  background-color: #3f5aa3;
+  width: 24px;
+  height: 20px;
+  display: inline-block;
+  padding: 8px;
+  margin-right: 4px;
+  border-radius: 4px;
+}
+.contact-mail p {
+  font-weight: bold;
+}
 @media (max-width: 700px) {
   .characteristics .grid, .cards-grid {
     grid-template-columns: 1fr;
